@@ -41,12 +41,50 @@ namespace LibMethods
             }
             for(int i = 0; i < mass.Length; i++)
             {
-                if(maxNumber - mass[i] != 0)
-                {
-                    rejections[i] = maxNumber - mass[i];
-                }                
+                rejections[i] = maxNumber - mass[i];
             }
+        }
 
+        public void ExchangeMaxMinRows(double[,] table, out double[,] changedTable)
+        {
+            changedTable = new double[table.GetLength(0), table.GetLength(1)];
+            double[] container = new double[table.GetLength(1)];            
+            int rowMinPosition = 0;
+            int rowMaxPosition = 0;
+            double minNumber = table[0,0];
+            double maxNumber = 0;
+            for(int i = 0; i < table.GetLength(0); i++)
+            {
+                for(int j = 0; j < table.GetLength(1); j++)
+                {
+                    changedTable[i, j] = table[i, j];
+                    if(table[i,j] > maxNumber)
+                    {
+                        maxNumber = table[i, j];
+                        rowMaxPosition = i;
+                    }
+                    if(table[i,j] < minNumber)
+                    {
+                        minNumber = table[i, j];
+                        rowMinPosition = i;
+                    }
+                }
+            }
+            for(int i = 0; i < container.Length; i++)
+            {
+                container[i] = table[rowMaxPosition, i];
+            }
+            for(int i = 0; i < changedTable.GetLength(0); i++)
+            {
+                for(int j = 0; j < changedTable.GetLength(1); j++)
+                {
+                    if( i == rowMinPosition)
+                    {
+                        changedTable[rowMaxPosition, j] = changedTable[rowMinPosition, j];
+                        changedTable[rowMinPosition, j] = container[j];
+                    }
+                } 
+            }
         }
 
     }
