@@ -77,7 +77,7 @@ namespace UnitTest
 
             double[,] table = new double[,] { {0, 1, 2, 3 }, { -1, 3, 6, 3 }, {10, 7, 5, 6 } };
             double[,] changedTable;
-            double[,] expected = new double[,] { { 10, 7, 5, 6 }, { -1, 3, 6, 3 }, { 0, 1, 2, 3 } };
+            double[,] expected = new double[,] { { 0, 1, 2, 3 }, { 10, 7, 5, 6 }, { -1, 3, 6, 3 } };
             
             task.ExchangeMaxMinRows(table, out changedTable);
             for(int i = 0; i < table.GetLength(0); i++)
