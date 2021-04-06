@@ -39,7 +39,7 @@ namespace LibMethods
                     maxNumber = mass[i];
                 }
             }
-            for(int i = 0; i < mass.Length; i++)
+            for(int i = 0; i < rejections.Length; i++)
             {
                 rejections[i] = maxNumber - mass[i];
             }
