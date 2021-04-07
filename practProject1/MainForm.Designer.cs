@@ -71,6 +71,7 @@ namespace practProject1
             this.toolTip4.SetToolTip(this.Task4, "Дана матрица A(N, M). Строку, содержащей максимальный элемент, поменять местами с" +
         "о строкой, содержащей минимальный элемент.\r\n");
             this.Task4.UseVisualStyleBackColor = true;
+            this.Task4.Click += new System.EventHandler(this.Task4_Click);
             // 
             // Task3
             // 
@@ -82,6 +83,7 @@ namespace practProject1
             this.toolTip3.SetToolTip(this.Task3, "Дан массив. Требуется найти максимальное значение элнментов массива и отклонение " +
         "от максимального для каждого из чисел.\r\n");
             this.Task3.UseVisualStyleBackColor = true;
+            this.Task3.Click += new System.EventHandler(this.Task3_Click);
             // 
             // Task2
             // 

@@ -31,7 +31,7 @@ namespace LibMethods
 
         public void RejectionMaxMass(int[] mass, out int maxNumber, out int[] rejections)
         {
-            maxNumber = 0;
+            maxNumber = mass[0];
             rejections = new int[mass.Length];
             for(int i = 0; i < mass.Length; i++)
             {
