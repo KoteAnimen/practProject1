@@ -41,5 +41,10 @@ namespace practProject1
             Task4 task = new Task4();
             task.ShowDialog();
         }
+
+        private void AboutUs_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Программа разработана студентом группы ИСП-31 Филяком Ильёй", "О программе");
+        }
     }
 }
