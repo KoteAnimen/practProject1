@@ -32,18 +32,18 @@ namespace practProject1
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.GetAnswer = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.number = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.answer = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.number)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.Controls.Add(this.number);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(276, 135);
@@ -53,7 +53,7 @@ namespace practProject1
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.answer);
             this.groupBox2.Location = new System.Drawing.Point(13, 154);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(276, 84);
@@ -69,24 +69,25 @@ namespace practProject1
             this.GetAnswer.TabIndex = 2;
             this.GetAnswer.Text = "Получить ответ";
             this.GetAnswer.UseVisualStyleBackColor = true;
+            this.GetAnswer.Click += new System.EventHandler(this.GetAnswer_Click);
             // 
-            // numericUpDown1
+            // number
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(6, 77);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.number.Location = new System.Drawing.Point(6, 77);
+            this.number.Maximum = new decimal(new int[] {
             99,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.number.Minimum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(263, 29);
-            this.numericUpDown1.TabIndex = 0;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.number.Name = "number";
+            this.number.Size = new System.Drawing.Size(263, 29);
+            this.number.TabIndex = 0;
+            this.number.Value = new decimal(new int[] {
             10,
             0,
             0,
@@ -101,13 +102,13 @@ namespace practProject1
             this.label1.TabIndex = 1;
             this.label1.Text = "Число";
             // 
-            // textBox1
+            // answer
             // 
-            this.textBox1.Location = new System.Drawing.Point(11, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(259, 29);
-            this.textBox1.TabIndex = 0;
+            this.answer.Location = new System.Drawing.Point(11, 40);
+            this.answer.Name = "answer";
+            this.answer.ReadOnly = true;
+            this.answer.Size = new System.Drawing.Size(259, 29);
+            this.answer.TabIndex = 0;
             // 
             // Task1
             // 
@@ -130,7 +131,7 @@ namespace practProject1
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.number)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -138,10 +139,10 @@ namespace practProject1
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown number;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button GetAnswer;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox answer;
     }
 }

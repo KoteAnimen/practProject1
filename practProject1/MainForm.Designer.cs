@@ -31,13 +31,13 @@ namespace practProject1
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Task4 = new System.Windows.Forms.Button();
+            this.Task3 = new System.Windows.Forms.Button();
+            this.Task2 = new System.Windows.Forms.Button();
+            this.Task1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutUs = new System.Windows.Forms.ToolStripMenuItem();
-            this.Task1 = new System.Windows.Forms.Button();
-            this.Task2 = new System.Windows.Forms.Button();
-            this.Task3 = new System.Windows.Forms.Button();
-            this.Task4 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
@@ -53,13 +53,56 @@ namespace practProject1
             this.groupBox1.Controls.Add(this.Task2);
             this.groupBox1.Controls.Add(this.Task1);
             this.groupBox1.Location = new System.Drawing.Point(15, 25);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox1.Size = new System.Drawing.Size(275, 276);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Главное меню";
+            // 
+            // Task4
+            // 
+            this.Task4.Location = new System.Drawing.Point(18, 212);
+            this.Task4.Name = "Task4";
+            this.Task4.Size = new System.Drawing.Size(237, 51);
+            this.Task4.TabIndex = 3;
+            this.Task4.Text = "Задание №4";
+            this.toolTip4.SetToolTip(this.Task4, "Дана матрица A(N, M). Строку, содержащей максимальный элемент, поменять местами с" +
+        "о строкой, содержащей минимальный элемент.\r\n");
+            this.Task4.UseVisualStyleBackColor = true;
+            // 
+            // Task3
+            // 
+            this.Task3.Location = new System.Drawing.Point(18, 155);
+            this.Task3.Name = "Task3";
+            this.Task3.Size = new System.Drawing.Size(237, 51);
+            this.Task3.TabIndex = 2;
+            this.Task3.Text = "Задание №3";
+            this.toolTip3.SetToolTip(this.Task3, "Дан массив. Требуется найти максимальное значение элнментов массива и отклонение " +
+        "от максимального для каждого из чисел.\r\n");
+            this.Task3.UseVisualStyleBackColor = true;
+            // 
+            // Task2
+            // 
+            this.Task2.Location = new System.Drawing.Point(18, 98);
+            this.Task2.Name = "Task2";
+            this.Task2.Size = new System.Drawing.Size(237, 51);
+            this.Task2.TabIndex = 1;
+            this.Task2.Text = "Задание №2";
+            this.toolTip2.SetToolTip(this.Task2, "Ввести три целых числа. Найти сумму тех чисел, которые больше пяти.\r\n");
+            this.Task2.UseVisualStyleBackColor = true;
+            // 
+            // Task1
+            // 
+            this.Task1.Location = new System.Drawing.Point(18, 41);
+            this.Task1.Name = "Task1";
+            this.Task1.Size = new System.Drawing.Size(237, 51);
+            this.Task1.TabIndex = 0;
+            this.Task1.Text = "Задание №1";
+            this.toolTip1.SetToolTip(this.Task1, "Ввести двузначное число. Определить: оканчивается ли оно чётной цифрой.\r\n");
+            this.Task1.UseVisualStyleBackColor = true;
+            this.Task1.Click += new System.EventHandler(this.Task1_Click);
             // 
             // menuStrip1
             // 
@@ -82,52 +125,10 @@ namespace practProject1
             // AboutUs
             // 
             this.AboutUs.Name = "AboutUs";
-            this.AboutUs.Size = new System.Drawing.Size(180, 22);
+            this.AboutUs.Size = new System.Drawing.Size(149, 22);
             this.AboutUs.Text = "О программе";
             // 
-            // Task1
-            // 
-            this.Task1.Location = new System.Drawing.Point(18, 41);
-            this.Task1.Name = "Task1";
-            this.Task1.Size = new System.Drawing.Size(237, 51);
-            this.Task1.TabIndex = 0;
-            this.Task1.Text = "Задание №1";
-            this.toolTip1.SetToolTip(this.Task1, "Ввести двузначное число. Определить: оканчивается ли оно чётной цифрой.\r\n");
-            this.Task1.UseVisualStyleBackColor = true;
-            // 
-            // Task2
-            // 
-            this.Task2.Location = new System.Drawing.Point(18, 98);
-            this.Task2.Name = "Task2";
-            this.Task2.Size = new System.Drawing.Size(237, 51);
-            this.Task2.TabIndex = 1;
-            this.Task2.Text = "Задание №2";
-            this.toolTip2.SetToolTip(this.Task2, "Ввести три целых числа. Найти сумму тех чисел, которые больше пяти.\r\n");
-            this.Task2.UseVisualStyleBackColor = true;
-            // 
-            // Task3
-            // 
-            this.Task3.Location = new System.Drawing.Point(18, 155);
-            this.Task3.Name = "Task3";
-            this.Task3.Size = new System.Drawing.Size(237, 51);
-            this.Task3.TabIndex = 2;
-            this.Task3.Text = "Задание №3";
-            this.toolTip3.SetToolTip(this.Task3, "Дан массив. Требуется найти максимальное значение элнментов массива и отклонение " +
-        "от максимального для каждого из чисел.\r\n");
-            this.Task3.UseVisualStyleBackColor = true;
-            // 
-            // Task4
-            // 
-            this.Task4.Location = new System.Drawing.Point(18, 212);
-            this.Task4.Name = "Task4";
-            this.Task4.Size = new System.Drawing.Size(237, 51);
-            this.Task4.TabIndex = 3;
-            this.Task4.Text = "Задание №4";
-            this.toolTip4.SetToolTip(this.Task4, "Дана матрица A(N, M). Строку, содержащей максимальный элемент, поменять местами с" +
-        "о строкой, содержащей минимальный элемент.\r\n");
-            this.Task4.UseVisualStyleBackColor = true;
-            // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -137,10 +138,10 @@ namespace practProject1
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Практическое задание";
