@@ -92,6 +92,7 @@ namespace practProject1
             this.Task2.Text = "Задание №2";
             this.toolTip2.SetToolTip(this.Task2, "Ввести три целых числа. Найти сумму тех чисел, которые больше пяти.\r\n");
             this.Task2.UseVisualStyleBackColor = true;
+            this.Task2.Click += new System.EventHandler(this.Task2_Click);
             // 
             // Task1
             // 

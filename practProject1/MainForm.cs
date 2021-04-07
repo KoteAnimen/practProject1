@@ -23,5 +23,11 @@ namespace practProject1
             Task1 task = new Task1();
             task.ShowDialog();
         }
+
+        private void Task2_Click(object sender, EventArgs e)
+        {
+            Task2 task = new Task2();
+            task.ShowDialog();
+        }
     }
 }

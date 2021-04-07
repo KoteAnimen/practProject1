@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LibMethods;
 
 namespace practProject1
 {
@@ -15,6 +16,13 @@ namespace practProject1
         public Task2()
         {
             InitializeComponent();
+        }
+
+        private void GetAnswer_Click(object sender, EventArgs e)
+        {
+            int[] mass = new int[] {(int)firstNumber.Value, (int)secondNumber.Value, (int)thridNumber.Value };
+            TaskMethods task = new TaskMethods();
+            answer.Text = task.SummThreeNumbers(mass).ToString();
         }
     }
 }
