@@ -8,11 +8,12 @@ namespace LibMethods
 {
     public class TaskMethods
     {
-        public bool EvenLastCifra(int number)
+        public int EvenLastCifra(int number)
         {
             number %= 10;
-            if (number % 2 == 0) return true;
-            else return false;
+            if (number == 0) return 0;
+            if (number % 2 == 0) return 1;            
+            else return -1;
         }
 
         public int SummThreeNumbers(int[] numbers)

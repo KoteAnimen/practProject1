@@ -11,14 +11,15 @@ namespace UnitTest
         public void TestMethodEvenLastCifra1()
         {
             TaskMethods task = new TaskMethods();            
-            Assert.AreEqual(true, task.EvenLastCifra(34));
+            Assert.AreEqual(1, task.EvenLastCifra(34));
+            Assert.AreEqual(0, task.EvenLastCifra(30));
         }
 
         [TestMethod]
         public void TestMethodEvenLastCifra2()
         {
             TaskMethods task = new TaskMethods();
-            Assert.AreEqual(false, task.EvenLastCifra(35));
+            Assert.AreEqual(-1, task.EvenLastCifra(35));
         }
 
         [TestMethod]
