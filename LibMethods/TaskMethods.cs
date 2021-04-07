@@ -8,7 +8,6 @@ namespace LibMethods
 {
     public class TaskMethods
     {
-
         
         public int SummThreeNumbers(int[] numbers)
         {
