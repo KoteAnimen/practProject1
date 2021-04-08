@@ -72,6 +72,22 @@ namespace UnitTest
         }
 
         [TestMethod]
+        public void RejectionMaxMass3()
+        {
+            TaskMethods task = new TaskMethods();
+            int[] numbers = new int[] { -5, -4, -3, -2, -1 };
+            int[] expected = new int[] { 4, 3, 2, 1, 0 };
+            int max;
+            int[] reject;
+            task.RejectionMaxMass(numbers, out max, out reject);
+            Assert.AreEqual(-1, max);
+            for (int i = 0; i < expected.Length; i++)
+            {
+                Assert.AreEqual(expected[i], reject[i]);
+            }
+        }
+
+        [TestMethod]
         public void ExchangeMaxMinRows1()
         {
             TaskMethods task = new TaskMethods();
