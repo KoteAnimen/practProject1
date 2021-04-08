@@ -20,6 +20,7 @@ namespace practProject1
             InitializeComponent();
         }
 
+        //Событие, в котором генерируестся исходная таблица, котороя сразу записывается в рич текст бокс, после записывается преобразованная таблица.
         private void GenerateAnswer_Click(object sender, EventArgs e)
         {
             tables.Clear();

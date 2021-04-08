@@ -25,6 +25,7 @@ namespace practProject1
             InitializeComponent();
         }
 
+        //Событие, в котором генерируется массив, после чего находится максимальное значение и отклонения.
         private void GenerateAnswer_Click(object sender, EventArgs e)
         {
             originalMass.Clear();

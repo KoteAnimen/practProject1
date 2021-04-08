@@ -18,6 +18,8 @@ namespace practProject1
             InitializeComponent();
         }
 
+
+        //Событитие, в котором определяется четность или нечетность последней цифры в двузначном числе
         private void GetAnswer_Click(object sender, EventArgs e)
         {
             int returned = 0;

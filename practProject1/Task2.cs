@@ -18,6 +18,7 @@ namespace practProject1
             InitializeComponent();
         }
 
+        //Событие, в котором рассчитывается сумма 3 чисел, если они больше 5. 
         private void GetAnswer_Click(object sender, EventArgs e)
         {
             int[] mass = new int[] {(int)firstNumber.Value, (int)secondNumber.Value, (int)thridNumber.Value };
