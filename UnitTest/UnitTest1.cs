@@ -8,35 +8,22 @@ namespace UnitTest
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethodEvenLastCifra1()
+        public void TestMethodEvenLastCifra()
         {
             TaskMethods task = new TaskMethods();            
-            Assert.AreEqual(1, task.EvenLastCifra(34));
-            Assert.AreEqual(0, task.EvenLastCifra(30));
+            Assert.AreEqual(true, task.EvenLastCifra(34));
+            Assert.AreEqual(false, task.EvenLastCifra(31));
         }
 
         [TestMethod]
-        public void TestMethodEvenLastCifra2()
-        {
-            TaskMethods task = new TaskMethods();
-            Assert.AreEqual(-1, task.EvenLastCifra(35));
-        }
-
-        [TestMethod]
-        public void TestMethodSummThreeNumbers1()
+        public void TestMethodSummThreeNumbers()
         {
             TaskMethods task = new TaskMethods();
             int[] numbers = new int[] {6, 6, 6};
             Assert.AreEqual(18, task.SummThreeNumbers(numbers));
-        }
-
-        [TestMethod]
-        public void TestMethodSummThreeNumbers2()
-        {
-            TaskMethods task = new TaskMethods();
-            int[] numbers = new int[] { 1, 2, 3 };
+            numbers = new int[] { 1, 2, 3 };
             Assert.AreEqual(0, task.SummThreeNumbers(numbers));
-        }
+        }        
 
         [TestMethod]
         public void RejectionMaxMass1()

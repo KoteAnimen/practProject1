@@ -9,12 +9,11 @@ namespace LibMethods
     public class TaskMethods
     {
         //Метод задания №1. Определить четная или нечетная ли последняя цифра в двузначном числе.
-        public int EvenLastCifra(int number)
+        public bool EvenLastCifra(int number)
         {
-            number %= 10;
-            if (number == 0) return 0;
-            if (number % 2 == 0) return 1;            
-            else return -1;
+            number %= 10;            
+            if (number % 2 == 0) return true;            
+            else return false;
         }
 
 

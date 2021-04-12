@@ -22,21 +22,17 @@ namespace practProject1
         //Событитие, в котором определяется четность или нечетность последней цифры в двузначном числе
         private void GetAnswer_Click(object sender, EventArgs e)
         {
-            int returned = 0;
+            bool returned;
             TaskMethods task1 = new TaskMethods();
             returned =  task1.EvenLastCifra((int)number.Value);
-            if (returned == 0)
-            {
-                answer.Text = "Последняя цифра не является четной или нечетной";
-            }
-            if (returned == 1)
+            if (returned == true)
             {
                 answer.Text = "Последняя цифра является четной";
             }
-            if(returned == -1)
+            else
             {
                 answer.Text = "Последняя цифра является нечетной";
-            }
+            }            
         }
     }
 }
