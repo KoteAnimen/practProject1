@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LibMethods
+﻿namespace LibMethods
 {
     public class TaskMethods
     {
@@ -15,7 +9,6 @@ namespace LibMethods
             if (number % 2 == 0) return true;            
             else return false;
         }
-
 
         //Метод задания №2. Если 3 числа(или даже больше в моем случае) больше 5, то мы их складываем. 
         public int SummThreeNumbers(int[] numbers)

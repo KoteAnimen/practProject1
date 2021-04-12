@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using LibMethods;
 
 namespace practProject1
 {
@@ -18,7 +10,7 @@ namespace practProject1
             InitializeComponent();
         }
 
-        //Собития, в которых вызывается окна с заданиями
+        //События, в которых вызывается окна с заданиями
 
         //Событие, где вызывается окно с заданием №1
         private void Task1_Click(object sender, EventArgs e)
